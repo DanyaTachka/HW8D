@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Міні-галерея</title>
+  <style>
+    ul.gallery {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    ul.gallery li {
+      border: 2px solid #e5e5e5;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      transition: transform 0.2s;
+    }
+    ul.gallery li:hover {
+      transform: scale(1.05);
+    }
+    ul.gallery img {
+      width: 100px;
+      height: 70px;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<ul>
+  <li>Картопля</li>
+  <li>Морква</li>
+  <li>Яйця</li>
+  <li>Варена ковбаса або курка</li>
+  <li>Мариновані огірки</li>
+  <li>Зелений горошок</li>
+  <li>Майонез</li>
+  <li>Сіль і перець за смаком</li>
+</ul>
+
+<ul class="gallery">
+  <li>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Russian_Salad_Olivier.jpg/640px-Russian_Salad_Olivier.jpg" alt="Олів’є">
+  </li>
+  <li>
+    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Фрукти">
+  </li>
+  <li>
+    <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543" alt="Кава">
+  </li>
+  <li>
+    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061" alt="Печиво">
+  </li>
+  <li>
+    <img src="https://images.unsplash.com/photo-1512058564366-c9e5d3a0f93b" alt="Тост">
+  </li>
+  <li>
+    <img src="https://images.unsplash.com/photo-1498600709200-84e23b4fb416" alt="Суп">
+  </li>
+</ul>
+
+</body>
+</html>
